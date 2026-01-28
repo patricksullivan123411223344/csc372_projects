@@ -17,7 +17,7 @@ img {
 }
 
 a {
-    text-decoration: blue;
+    text-decoration: underline;
     transition: color 0.3s ease, transform 0.3s ease
 }
 
@@ -28,6 +28,6 @@ a {
 .spotlight {
     padding: 10px;
     border: 3px dotted yellow;
-    width: 10px
-    text-align
+    width: 112px;
+    border-radius: 10px
 }
