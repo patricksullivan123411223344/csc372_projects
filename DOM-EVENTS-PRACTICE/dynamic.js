@@ -1,4 +1,3 @@
-// 1. State (JS Memory)
 const names = ["Patrick", "Johnny", "Tim"];
 let index = 0;
 
@@ -14,8 +13,4 @@ button.addEventListener("click", () => {
 
     namesTarget.textContent = names[index];
 });
-
-
-
-
 

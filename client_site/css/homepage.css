@@ -1,0 +1,49 @@
+body {
+    background-color: lightgray;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    list-style: none
+
+}
+nav {
+    background-color: gray;
+    color: white;
+    padding-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2)
+}
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-left: 50px;
+    padding-top: 25px
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    overflow: hidden;
+}
+a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+}
+.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end
+}
+.hero_image {
+    padding-top: 100px;
+    width: 550px;
+    height: 350px;
+}
+
+
