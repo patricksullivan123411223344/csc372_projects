@@ -21,7 +21,7 @@ nav {
     align-items: center;
     gap: 100px;
     padding-left: 50px;
-    padding-top: 25px
+    padding-top: 25px;
 }
 ul {
     display: flex;
@@ -44,6 +44,7 @@ a {
     padding-top: 100px;
     width: 550px;
     height: 350px;
+    border-radius: 20px
 }
 
 
