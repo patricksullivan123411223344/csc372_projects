@@ -3,31 +3,45 @@ body {
     color: black;
     margin: 0px;
     padding: 0px;
-    list-style: none
-
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 nav {
     background-color: gray;
     color: white;
-    padding-top: 0px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2)
 }
+.innerNav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+}
+.navList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .hero {
     display: flex;
     align-items: center;
-    gap: 100px;
+    justify-content: center;
+    gap: 250px;
     padding-left: 50px;
-    padding-top: 25px;
-}
-ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    overflow: hidden;
+    padding-bottom: 25px;
+    overflow: hidden
 }
 a {
     display: flex;
@@ -38,13 +52,33 @@ a {
 .heroText {
     display: flex;
     flex-direction: column;
-    justify-items: flex-end
+    align-items: center;
+    gap: 14px;
 }
 .hero_image {
-    padding-top: 100px;
     width: 550px;
     height: 350px;
-    border-radius: 20px
+    border-radius: 20px;
+    display: block;
+}
+.heroImage_wrapper {
+    padding-top: 100px
+}
+.heroCTA {
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: black;
+    color: lightgray;
+    font-size: 20px;
+}
+.heroText h1 {
+    margin-bottom: 8px;
+    font-size: 50px;
+}
+.heroText p {
+    margin-top: 0px;
+    font-size: 25px;
 }
 
 

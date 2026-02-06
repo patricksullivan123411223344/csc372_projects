@@ -13,4 +13,3 @@ button.addEventListener("click", () => {
 
     namesTarget.textContent = names[index];
 });
-
