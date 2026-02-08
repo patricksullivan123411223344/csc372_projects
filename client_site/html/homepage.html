@@ -1,36 +1,109 @@
+<!--
+Name: Patrick Sullivan
+Date: Feb 8 2026
+File: homepage.html
+Description: Homepage for Katherine Sullivan LCSW client site.
+Includes a hero section, speciality list (card format), and a 
+contact form routed to the contact button using DOM event handling.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial_scale 1.0">
+        <meta name="viewport" content="width=device-width, initial_scale=1.0">
         <title>Katherine Sullivan LCSW</title>
         <meta name="description" content="This is the homepage for Katherine Sullivan LCSW website">
-        <link rel="stylesheet" href="/client_site/css/homepage.css">
+        <link rel="stylesheet" href="../css/refactored.css">
     </head>
 
     <body>
-
+    
+        <!--Nav section-->
     <nav class="navBar">
         <div class="innerNav">
+        <img 
+        src="/client_site/images/KC_Logo.png"
+        alt="Katherine Sullivan LCSW logo"
+        class="navLogo"
+        />
          <ul class="navList">
-            <li class="navbar_home"><a href="//">Home</a></li>
+            <li class="navbar_home"><a href="/client_site/html/homepage.html">Home</a></li>
             <li class="navbar_about"><a href="/client_site/html/about.html">About</a></li>
             <li class="navbar_contact_CTA"><a href="//">Contact</a></li>
         </ul>
       </div>
     </nav>
-    
-    <div class="hero">
-       <div class="heroImage_wrapper"><img class="hero_image" src="/client_site/media/hero_image.png" alt="Hero Image"></div>
+     <!--End of nav section-->
+  
+     <!--Hero Section-->
+     <section class="heroBanner">
+    <img class ="heroBanner_img" src="/client_site/images/hero_image.png" alt=" Katherine Sullivan LSCW Hero Image">
+    <div class="heroBanner_overlay">
         <div class="heroText">
-        <h1 class="header-content">Katherine Sullivan LCSW</h1>
-        <p class="calmWords"><strong>A place to heal, grow, and move forward.</strong></p>
-        <button class="heroCTA">Contact</button>
+        <h1>Katherine Sullivan LCSW</h1>
+        <p>A place to move forward</p>
+        <button id="heroCtaButton" class ="buttonPrimary">Contact</button>
+     </div>
     </div>
- </div>
+  </section>
+  <!--End of hero section-->
 
- <hr class="dividerInfo"    />
+  <!--Specialty card section-->
+ <section class="specialities" aria-labelledby="specialtiesTitle">
+    <h2 id="specialtiesTitle" class="sectionTitle">Specialties</h2>
 
+    <div class="cardGrid">
+        <article class="card">
+            <h3 class="cardTitle">Anxiety & Stress</h3>
+            <p class="cardText">Tools to manage overwhelm, worry cycles, and regain calm.</p>
+        </article>
+
+        <article class="card">
+            <h3 class="cardTitle">Trauma-Informed Care</h3>
+            <p class="cardText">A grounded, compassionate approach that prioritizes safety and pacing.</p>
+        </article>
+
+        <article class="card">
+            <h3 class="cardTitle">Life Transitions</h3>
+            <p class="cardText">Support through change in relationships, careers, identity, and more.</p>
+        </article>
+    </div>
+ </section>
+ <!--End of specialty card section-->
+
+ <hr    /> <!--Divider for page organization-->
+
+ <!--Contact Section. Called using ID for specific DOM logic-->
+ <section id="contactSection" class="contact" aria-labelledby="contactTitle">
+    <h2 id="contactTitle" class="sectionTitle">Contact</h2>
+
+    <div class="contactBox">
+        <p class="contactText">Ready to talk? Reach out and we'll find a time that works.</p>
+    </div>
+
+    <form class="contactForm">
+        <label class="field">
+            <span>Name</span>
+            <input type="text" required>
+        </label>
+
+        <label class="field">
+            <span>Email</span>
+            <input type="email" required>
+        </label>
+
+        <label class="field">
+            <span>Message</span>
+            <textarea rows="5" required></textarea>
+        </label>
+
+        <button type="submit" class="buttonPrimary">Submit</button>
+    </form>
+ </section>
+ <!--End of contact section-->
+
+ <!--Script added at end for control flow. Script initializes after everything renders.-->
 <script src="/client_site/js/homepage_logic.js"></script>
 </body>
 </html>
