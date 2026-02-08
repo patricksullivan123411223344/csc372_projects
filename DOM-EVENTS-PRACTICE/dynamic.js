@@ -6,7 +6,7 @@ const namesTarget = document.getElementById("nameTarget");
 const button = document.getElementById("changeNameBtn")
 
 button.addEventListener("click", () => {
-    index++;
+    index ++;
 
     if (index === names.length) {
         index = 0;
