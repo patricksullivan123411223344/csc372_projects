@@ -41,7 +41,6 @@ nav {
     gap: 250px;
     padding-left: 50px;
     padding-bottom: 25px;
-    overflow: hidden
 }
 a {
     display: flex;
