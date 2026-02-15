@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>Katherine Sullivan LCSW - Contact Form</Title>
+        <link rel = "stylesheet" href="/client_site/css/contact.css">
+    </head>
+<body>
+
+    <!--Navbar Section-->
+    <nav class="navBar">
+        <div class="innerNav">
+        <img 
+        src="/client_site/images/KC_Logo.png"
+        alt="Katherine Sullivan LCSW logo"
+        class="navLogo"
+        />
+         <ul class="navList">
+            <li class="navbar_home"><a href="/client_site/index.html">Home</a></li>
+            <li class="navbar_about"><a href="/client_site/html/about.html">About</a></li>
+            <li class="navbar_contact_CTA"><a href="/client_site/html/contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <div class="contactBox">
+        <h1 class="contactText">Ready to talk? Reach out and we'll find a time that works.</h1>
+        <h2 class ="contactButtonWrap">
+            <button id="toEmailForm" class="contactButtons">I have a question</button>
+            <button class="toContactSection" contactButtons">I want to book a session</button>
+        </h2>
+    </div>
+
+    <hr />
+
+ <section id="contactSection" class="contact" aria-labelledby="contactTitle">
+    <h1 class="emailFormHeader">Send Katherine an Email!</h1>
+    <form class="contactForm">
+        <label class="field">
+            <span>Name</span>
+            <input type="text" required>
+        </label>
+
+        <label class="field">
+            <span>Email</span>
+            <input type="email" required>
+        </label>
+
+        <label class="field">
+            <span>Message</span>
+            <textarea rows="5" required></textarea>
+        </label>
+
+        <button type="submit" class="buttonPrimary">Submit</button>
+    </form>
+ </section>
+
+<script src="/client_site/js/contact_page_logic.js"></script>
+</body>
+</html>
