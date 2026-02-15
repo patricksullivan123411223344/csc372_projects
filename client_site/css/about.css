@@ -7,6 +7,7 @@
     --accent-hover: #7c9b8b;
 }
 body {
+    padding-top: 80px;
     background-color: var(--bg-main);
     color: var(--text-primary);
     font-family: sans-serif;
@@ -52,12 +53,67 @@ nav {
     color: var(--text-primary);
     text-decoration: none;
 }
-#navLogic {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.3s ease;
-}
 .aboutHeroWrapper .aboutHeader {
     color: var(--text-primary)
+}
+.meetKatherine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
+}
+.katherineInfoSection {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(160px, 420px) 1fr;
+    gap: 15rem;
+    align-items: center;
+}
+.kcAboutImage {
+    width: 100%;
+    height: auto;
+    display: blocks;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.aboutTextContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+}
+.aboutKCh2 {
+    margin: 0;
+    line-height: 1.1;
+}
+.kcInfoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.65rem;
+}
+.infoList {
+    margin: 0;
+    padding-left: 1rem;
+    position: relative;
+}
+.infoList::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mapLocationSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 900px) {
+    .katherineInfoSection {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
 }
