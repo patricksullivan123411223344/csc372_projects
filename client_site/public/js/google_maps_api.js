@@ -9,27 +9,22 @@ based on returned data. Includes a DOM event attatched to a button, where on cli
 it recenters the map. Also handles loading/error states for a responsive user 
 experience.
 */
-
-//API key
-const API_KEY = "AIzaSyCcJfQtl7zxKFtpISZ4Uza01Yx_4kX1oN0"; 
+const API_KEY = "AIzaSyCcJfQtl7zxKFtpISZ4Uza01Yx_4kX1oN0";
 
 //Helper function to simplify id calls
 function $(id) {
   return document.getElementById(id);
 }
-
 //Updates status message displayed to user
 function setStatus(msg) {
   const el = $("geoStatus");
   if (el) el.textContent = msg;
 }
-
 //Updates result message (lat/lng display)
 function setResult(msg) {
   const el = $("geoResult");
   if (el) el.textContent = msg;
 }
-
 //Uses fetch() to call the Google Geocoding API and return coordinates
 async function geocodeAddress(address) {
   setStatus("Loading office coordinates…");
@@ -44,14 +39,13 @@ async function geocodeAddress(address) {
   const data = await res.json();
 
   console.log("GEOCODE:", data.status, data);
-
   //Validate API response
   if (data.status !== "OK" || !data.results?.length) {
     throw new Error(`Geocode status: ${data.status}`);
   }
 
   //Extract lat and lng from response
-  const loc = data.results[0].geometry.location; 
+  const loc = data.results[0].geometry.location;
   return loc;
 }
 
@@ -59,7 +53,6 @@ async function geocodeAddress(address) {
 function applyLocationToMapAndMarker(loc) {
   const mapEl = $("officeMap");
   const markerEl = $("officeMarker");
-
   if (!mapEl) {
     console.warn("officeMap not found");
     return;
@@ -82,7 +75,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const btn = $("recenterBtn");
 
   const address = "181 Post Road West, Westport, CT";
-
   let officeLoc = null;
 
   try {
@@ -118,4 +110,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     setResult(`Lat: ${lat.toFixed(5)}  Lng: ${lng.toFixed(5)}`);
   });
 });
-
