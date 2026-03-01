@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{pageTitle}} | Katherine Sullivan LCSW</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{#if stylesheet}}
+            <link rel="stylesheet" href="/css/{{stylesheet}}.css">
+        {{/if}}
+    </head>
+    
+    <body>
+    
+    <!--NAVBAR-->
+        <header>
+            <nav class="navBar" id="navLogic">
+                <div class="innerNav">
+                <img 
+                src="/images/KC_Logo.png"
+                alt="Katherine Sullivan LCSW logo"
+                class="navLogo"
+                />
+                <ul class="navList">
+                    <li class="navbar_home"><a href="/">Home</a></li>
+                    <li class="navbar_about"><a href="/about">About</a></li>
+                    <li class="navbar_contact_CTA"><a href="/contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+        </header>
+
+        <main>
+            <p>LAYOUT WORKING</p>
+            {{{body}}}
+        </main>
+
+        {{#if pageJS}}
+            <script src="/js/{{pageJS}}.js"></script>
+        {{/if}}
+    </body>
+</html>
