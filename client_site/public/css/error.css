@@ -1,0 +1,21 @@
+.error-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-code {
+  font-size: 6rem;
+  color: #e74c3c;
+  margin: 0;
+  font-weight: 300;
+}
+
+.buttonPrimary, .buttonSecondary {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
