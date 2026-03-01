@@ -1,3 +1,10 @@
+/*
+Name: Patrick Sullivan
+Date: March 1, 2026
+File: server.js
+Overview: This is my main server.js file. This is what is used to start the server, and dynamically generates web pages through the 
+server-side logic. 
+*/
 const express = require('express');
 const exphbs = require('express-handlebars');
 
