@@ -16,7 +16,8 @@ app.get('/', (req, res) => {
         pageTitle: 'Home',
         tagline: 'A voice you can trust',
         stylesheet: 'homepage',
-        pageJS: null
+        pageJS: null,
+        isIndex: true
     });
 });
 
@@ -25,7 +26,8 @@ app.get('/about', (req, res) => {
         pageTitle: 'About',
         officeAddress: '181 Post Reaod West, Westport, CT',
         stylesheet: 'about',
-        pageJS: 'google_maps_api'
+        pageJS: 'google_maps_api',
+        isAbout: true
     });
 });
 
@@ -34,7 +36,8 @@ app.get('/contact', (req, res) => {
         pageTitle: 'contact',
         contactEmail: 'patrick.sullivan@uri.edu',
         stylesheet: 'contact',
-        pageJS: 'contact_page_logic'
+        pageJS: 'contact_page_logic',
+        isContact: true
     });
 });
 

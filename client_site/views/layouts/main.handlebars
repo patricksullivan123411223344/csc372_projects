@@ -37,5 +37,15 @@
         {{#if pageJS}}
             <script src="/js/{{pageJS}}.js"></script>
         {{/if}}
+
+        {{#if isAbout}}
+            <script async src=
+            "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcJfQtl7zxKFtpISZ4Uza01Yx_4kX1oN0&libraries=maps,marker&loading=async&v=weekly">
+            </script>
+        {{/if}}
+
+        {{#if isContact}}
+            <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        {{/if}}
     </body>
 </html>
